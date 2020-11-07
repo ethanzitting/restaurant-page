@@ -1,0 +1,55 @@
+#header {
+	display: inline-flex;
+	align-items: center;
+	text-align: center;
+	Position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: lightblue;
+	border-bottom: 1px solid gray;
+}
+
+#home, #menu, #contact, #about, #more {
+}
+
+#home {
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+#menu, #contact, #about {
+	width: 100px;
+	background-color: white;
+}
+
+#more {
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+body {
+	margin-top: 50px;
+}
+
+#footer {
+	position: fixed;
+	display: inline-flex;
+	align-items: center;
+	text-align: center;
+	bottom: 0px;
+	width: 100%;
+	height: 30px;
+	background-color: lightgreen;
+	border-top: 1px solid gray;
+}
+
+#linkedIn {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#copywrite {
+	margin-left: auto;
+	margin-right: 20px;
+}

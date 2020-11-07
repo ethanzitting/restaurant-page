@@ -1,19 +1,40 @@
-import { loadPage } from './initialLoad.js';
-
-console.log("Hello World!");
+import { loadPage, loadHome, loadMenu, loadContact, loadAbout } from './moduleAggregator.js';
 
 // This is going to load all of the initial landing page.
 loadPage();
 
 // From there, I want to establish event listeners for the tabs present in the landing page DOM.
-// addEventListeners();
-	// I will build this here.
+const linkTabs = (() => {
+	const clearContent = () => {
+		const content = document.querySelector("#content");
+		while (content.firstChild) {
+			content.removeChild(content.firstChild);
+		}
+	}
 
-	// When one is clicked, I want to do the following:
-	// clearDOM();
-		// I will build this here.
+	const home = document.querySelector("#home");
+	const menu = document.querySelector("#menu");
+	const contact = document.querySelector("#contact");
+	const about = document.querySelector("#about");
 
-	// loadCorrespondingTab();
-		// There will be a function for each tab. I will import them from a different JS file. 
-		//They will all have their own file., and I may route the imports through a parent file?
-		// Tabs: Home, Menu, Contact Us, About Us, Call
+	home.addEventListener('click', () => {
+		clearContent();
+		loadHome();
+	});
+
+	menu.addEventListener('click', () => {
+		clearContent();
+		loadMenu();
+	});
+
+	contact.addEventListener('click', () => {
+		clearContent();
+		loadContact();
+	});
+
+	about.addEventListener('click', () => {
+		clearContent();
+		loadAbout();
+	});
+})();
+
