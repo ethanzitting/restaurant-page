@@ -2,6 +2,7 @@ a:link, a:visited, a:active {
 	color: #FFFFFF;
 	text-decoration: none;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 a:hover {
@@ -11,7 +12,7 @@ a:hover {
 }
 
 body {
-	max-width: 100%;
+	width: 100vw;
 	background-color: lightblue;
     background-image: url(../images/dinnerTable.jpg);
 	background-position: 0 0;
@@ -20,6 +21,42 @@ body {
 	background-attachment: fixed;
 	font-family: Lato;
 	color: white;
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+	margin: 30px;
+}
+
+p {
+	font-family: Montserrat;
+	line-height: 25px;
+	font-weight: bold;
+}
+
+button {
+	width: 150px;
+	height: 35px;
+	font-family: Lato;
+	font-weight: bold;
+	font-size: 15px;
+	border: 1px solid gray;
+	border-radius: 4px;
+	background-color: rgba(20, 20, 20, 0.9);
+	color: white;
+	margin-top: 20px;
+	margin-left: 15vh;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: rgba(150, 150, 150, 0.9);
+}
+
+li {
+	margin: 4px;
 }
 
 #header {
@@ -34,13 +71,33 @@ body {
 	border-bottom: 1px solid gray;
 }
 
-#home {
-	margin-left: 20px;
-	width: 100px;
+#container {
+	max-width: 100vw;
 }
 
-#menu, #contact, #about {
+#home {
+	margin-left: 20px;
+}
+
+#home, #menu, #contact, #about {
 	width: 100px;
+	height: 33px;
+	padding-top: 17px;
+}
+
+.active {
+	background-color: rgba(200, 200, 200, 0.9);
+	color: black !important;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.fakeLink {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 #more {
@@ -54,10 +111,12 @@ body {
 	grid-template: repeat(5, 40vw) / repeat(2, 50vw);
 	margin-top: 100px;
 	margin-bottom: 30px;
+	max-width: 100vw;
 }
 
 #logoImage {
 	width: 100%;
+	padding-top: 10vw;
 }
 
 #menuImage, #locationImage, #aboutImage, #contactImage {

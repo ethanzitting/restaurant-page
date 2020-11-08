@@ -1,6 +1,7 @@
 // In this file, I will design the initial landing page for the restaurant.
 // I will generate all the HTML using JS and then style it in index.css.
 import { makeDiv } from './makeDiv.js';
+import { activateTab, deactivateTab } from './tabManipulation';
 
 const body = document.querySelector("body");
 const content = document.querySelector("#content");
@@ -21,34 +22,39 @@ const loadHome = () => {
 
 	// Makes BrandName and description
 	makeDiv("#homeContainer", "brandName", `<h1>ACME Cafe</h1><p>We are an owned and operated cafe 
-	located VERY close to where you are right this second. We serve human food designed
-	to keep you functioning.</p>`);
+	located VERY close to where you are right now. We serve human food designed
+	to [redacted].</p>`);
 
 	// Makes Menu Text and Menu Image
 	makeDiv("#homeContainer", "menuImageDiv", '<img id="menuImage" src="../images/lightCream.jpg" alt="Image of Tasty Ice Cream">');
-	makeDiv("#homeContainer", "menuText", "Menu Text");
+	makeDiv("#homeContainer", "menuText", `<p>See what foods we offer to you. This is the offer. We're offering food to you.</p><button>See Our "Menu"</button>`);
 
 	// Makes Location Text and Location Image
-	makeDiv("#homeContainer", "locationText", "Location Text");
+	makeDiv("#homeContainer", "locationText", `<p>We are convenietly located directly behind you. We like how you've decorated the place.</p><button>Turn Around</button>`);
 	makeDiv("#homeContainer", "locationImageDiv", '<img id="locationImage" src="../images/locationImage.jpg" alt="Image of Cafe Location">');
 
 	// Makes About us image and text
 	makeDiv("#homeContainer", "aboutImageDiv", '<img id="aboutImage" src="../images/orange.jpg" alt="Image of Us">');
-	makeDiv("#homeContainer", "aboutText", "About Us Text");
+	makeDiv("#homeContainer", "aboutText", `<p>With a combined [redacted] years of culinary experience, we can.</p><ul><li> - Trustworthy</li><li> - The Lesser Evil</li><li> - Won't Betray You Again</li><li> - We DO NOT alter our clients memories.</li></ul><button></button>`);
 
 	// Makes Contact Us text and image
-	makeDiv("#homeContainer", "contactText", "Contact Us");
+	makeDiv("#homeContainer", "contactText", `<p>Get in touch with us! You can link with our mind by thinking any thought, or you can just whisper. We can hear you just fine. We're right behind you.</p><button>Contact Us</button>`);
 	makeDiv("#homeContainer", "contactImageDiv", `<img id="contactImage" src="../images/telepathy.png" alt="Image of You Contacting Us">`);
+
+	// Highlights Home Tab
+	activateTab("#home");
 }
 
 const loadPage = () => {
 	// Create Header
 	makeDiv("body", "header", "", "before");
-	makeDiv("#header", "home", "Home");
-	makeDiv("#header", "menu", "Menu");
+	makeDiv("#header", "home", 'Home');
+	home.setAttribute("class", "fakeLink");
+	makeDiv("#header", "menu", 'Menu');
+	menu.setAttribute("class", "fakeLink");
 	makeDiv("#header", "contact", "Contact Us");
-	makeDiv("#header", "about", "About Us");
-	makeDiv("#header", "more", "More by Ethan");
+	contact.setAttribute("class", "fakeLink");
+	makeDiv("#header", "more", '<a href="https://www.ethanzitting.com" target="_blank">More by Ethan</a>');
 
 	// Make Home Page
 	makeDiv("body", "content");
@@ -56,8 +62,8 @@ const loadPage = () => {
 
 	// Create Footer
 	makeDiv("body", "footer");
-	makeDiv("#footer", "linkedIn", "LinkedIn");
-	makeDiv("#footer", "gitHub", "GitHub");
+	makeDiv("#footer", "linkedIn", '<a href="https://www.linkedin.com/in/ethanzitting/" target="_blank">LinkedIn</a>');
+	makeDiv("#footer", "gitHub", '<a href="https://github.com/ethanzitting" target="_blank">GitHub</a>');
 	makeDiv("#footer", "copywrite", "© 2020");
 }
 

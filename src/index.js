@@ -1,4 +1,4 @@
-import { loadPage, loadHome, loadMenu, loadContact, loadAbout } from './moduleAggregator.js';
+import { loadPage, loadHome, loadMenu, loadContact, activateTab } from './moduleAggregator.js';
 
 // This is going to load all of the initial landing page.
 loadPage();
@@ -15,7 +15,6 @@ const linkTabs = (() => {
 	const home = document.querySelector("#home");
 	const menu = document.querySelector("#menu");
 	const contact = document.querySelector("#contact");
-	const about = document.querySelector("#about");
 
 	home.addEventListener('click', () => {
 		clearContent();
@@ -30,11 +29,6 @@ const linkTabs = (() => {
 	contact.addEventListener('click', () => {
 		clearContent();
 		loadContact();
-	});
-
-	about.addEventListener('click', () => {
-		clearContent();
-		loadAbout();
 	});
 })();
 
