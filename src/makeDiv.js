@@ -1,9 +1,9 @@
-const makeDiv = (parentID, childID, textFiller, placement) => {
+const makeDiv = (parentID, childID, htmlToUse, placement) => {
 	const parent = document.querySelector(`${parentID}`);
 	const child = document.createElement("div");
 	child.setAttribute("id", `${childID}`);
-	textFiller = textFiller || "";
-	child.textContent = textFiller;
+	htmlToUse = htmlToUse || "";
+	child.innerHTML = htmlToUse;
 	placement = placement || "after";
 	if (placement == "before") {
 		parent.prepend(child);
