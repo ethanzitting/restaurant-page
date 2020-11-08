@@ -21,7 +21,7 @@ const loadHome = () => {
 	makeDiv("#homeContainer", "logo", "<img id='logoImage' src='../images/logo.svg' alt='Cafe Logo Image'>");
 
 	// Makes BrandName and description
-	makeDiv("#homeContainer", "brandName", `<h1>ACME Cafe</h1><p>We are an owned and operated cafe 
+	makeDiv("#homeContainer", "brandName", `<h1>ACME Cafe</h1><p id="descriptionText">We are an owned and operated cafe 
 	located VERY close to where you are right now. We serve human food designed
 	to [redacted].</p>`);
 

@@ -47,7 +47,6 @@ button {
 	background-color: rgba(20, 20, 20, 0.9);
 	color: white;
 	margin-top: 20px;
-	margin-left: 15vh;
 }
 
 button:hover {
@@ -108,7 +107,7 @@ li {
 #homeContainer {
 	display: grid;
 	grid-row-gap: 50px;
-	grid-template: repeat(5, 40vw) / repeat(2, 50vw);
+	grid-template: repeat(5, 40vh) / repeat(2, 50vw);
 	margin-top: 100px;
 	margin-bottom: 30px;
 	max-width: 100vw;
@@ -119,12 +118,17 @@ li {
 	padding-top: 10vw;
 }
 
+#descriptionText {
+	font-size: 12px;
+}
+
 #menuImage, #locationImage, #aboutImage, #contactImage {
 	max-width: 100%;
 	height: auto;
 	max-height: 100%;
-	border-radius: 4px;
-	box-shadow: 1px 1px 4px grey;
+	border-radius: 6px;
+	border: 1px solid gray;
+	box-shadow: 2px 2px 6px gray;
 }
 
 #homeContainer>div {
@@ -134,20 +138,48 @@ li {
 
 #menuContainer {
 	margin-top: 50px;
+	width: 100vw;
 }
 
-#appTitle, #appContainer, #entreTitle, #entreContainer, #desertTitle, #desertContainer, #drinkTitle, #drinkContainer {
+#appTitle, #appContainer, #entreTitle, #entreContainer, #dessertTitle, #dessertContainer, #drinkTitle, #drinkContainer {
 	background-color: rgba(0, 0, 0, .6);
 }
 
-#appTitle, #entreTitle, #desertTitle, #drinkTitle {
+#appTitle, #entreTitle, #dessertTitle, #drinkTitle {
 	font-weight: bold;
 	text-align: center;
 	font-size: 30px;
 }
 
-#appContainer, #entreContainer, #desertContainer, #drinkContainer {
+#appContainer, #entreContainer, #dessertContainer, #drinkContainer {
 	display: inline-flex;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.appImg>img, .entreImg>img, .dessertImg>img, .drinkImg>img {
+	max-width: 20vw;
+	height: auto;
+	max-height: 20vw;
+	border-radius: 4px;
+	box-shadow: 2px 2px 6px gray;
+}
+
+#app1, #app2, #app3, #entre1, #entre2, #entre3, #dessert1, #dessert2, #dessert3, #drink1, #drink2, #drink3 {
+	margin: 10px;
+	border-radius: 4px;
+	background-color: rgba(20, 20, 20, 0.9);
+	padding: 5px;
+}
+
+#contactContainer {
+	margin-top: 50px;
+	height: 84.7vh;
+}
+
+#temp {
+	font-weight: bold;
+	font-size: 50px;
 }
 
 #footer {
