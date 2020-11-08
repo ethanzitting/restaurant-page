@@ -15,7 +15,7 @@ const loadMenu = () => {
 	// Appetizer Title and Cards
 	makeDiv("#menuContainer", "appTitle", `<h1>Appetizers</h1>`);
 	makeDiv("#menuContainer", "appContainer");
-	const bananas = foodFactory("images/bananas.jpg", "Bananas", "Eat them quickly!", "app", 1);
+	const bananas = foodFactory("dist/images/bananas.jpg", "Bananas", "Eat them quickly!", "app", 1);
 	makeDiv(bananas.parentID, bananas.foodID, bananas.htmlToUse);
 	const pineapple = foodFactory("images/pineapple.jpg", "Pineapple", "Firm, strong pinapple.", "app", 2);
 	makeDiv(pineapple.parentID, pineapple.foodID, pineapple.htmlToUse);
