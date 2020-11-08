@@ -15,6 +15,8 @@ const linkTabs = (() => {
 	const home = document.querySelector("#home");
 	const menu = document.querySelector("#menu");
 	const contact = document.querySelector("#contact");
+	const menuButton = document.querySelector("#menuButton");
+	const contactButton = document.querySelector("#contactButton");
 
 	home.addEventListener('click', () => {
 		clearContent();
@@ -30,5 +32,19 @@ const linkTabs = (() => {
 		clearContent();
 		loadContact();
 	});
+
+	// These two buttons only fire once after a complete website reload.
+	// They do not fire after loading home from the home button.
+	menuButton.addEventListener('click', () => {
+		clearContent();
+		loadMenu();
+	});
+
+	contactButton.addEventListener('click', () => {
+		clearContent();
+		loadContact();
+	});
+
+
 })();
 

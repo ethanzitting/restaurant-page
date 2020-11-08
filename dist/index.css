@@ -23,7 +23,7 @@ body {
 	color: white;
 }
 
-h1 {
+#brandName>h1 {
 	font-weight: bold;
 	text-align: center;
 	font-size: 30px;
@@ -130,6 +130,24 @@ li {
 #homeContainer>div {
 	background-color: rgba(0, 0, 0, .6);
 	padding: 20px;
+}
+
+#menuContainer {
+	margin-top: 50px;
+}
+
+#appTitle, #appContainer, #entreTitle, #entreContainer, #desertTitle, #desertContainer, #drinkTitle, #drinkContainer {
+	background-color: rgba(0, 0, 0, .6);
+}
+
+#appTitle, #entreTitle, #desertTitle, #drinkTitle {
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+}
+
+#appContainer, #entreContainer, #desertContainer, #drinkContainer {
+	display: inline-flex;
 }
 
 #footer {

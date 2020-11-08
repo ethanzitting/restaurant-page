@@ -27,7 +27,7 @@ const loadHome = () => {
 
 	// Makes Menu Text and Menu Image
 	makeDiv("#homeContainer", "menuImageDiv", '<img id="menuImage" src="../images/lightCream.jpg" alt="Image of Tasty Ice Cream">');
-	makeDiv("#homeContainer", "menuText", `<p>See what foods we offer to you. This is the offer. We're offering food to you.</p><button>See Our "Menu"</button>`);
+	makeDiv("#homeContainer", "menuText", `<p>See what foods we offer to you. This is the offer. We're offering food to you.</p><button id="menuButton">See Our "Menu"</button>`);
 
 	// Makes Location Text and Location Image
 	makeDiv("#homeContainer", "locationText", `<p>We are convenietly located directly behind you. We like how you've decorated the place.</p><button>Turn Around</button>`);
@@ -38,7 +38,7 @@ const loadHome = () => {
 	makeDiv("#homeContainer", "aboutText", `<p>With a combined [redacted] years of culinary experience, we can.</p><ul><li> - Trustworthy</li><li> - The Lesser Evil</li><li> - Won't Betray You Again</li><li> - We DO NOT alter our clients memories.</li></ul><button></button>`);
 
 	// Makes Contact Us text and image
-	makeDiv("#homeContainer", "contactText", `<p>Get in touch with us! You can link with our mind by thinking any thought, or you can just whisper. We can hear you just fine. We're right behind you.</p><button>Contact Us</button>`);
+	makeDiv("#homeContainer", "contactText", `<p>Get in touch with us! You can link with our mind by thinking any thought, or you can just whisper. We can hear you just fine. We're right behind you.</p><button id="contactButton">Contact Us</button>`);
 	makeDiv("#homeContainer", "contactImageDiv", `<img id="contactImage" src="../images/telepathy.png" alt="Image of You Contacting Us">`);
 
 	// Highlights Home Tab
