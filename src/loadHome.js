@@ -26,7 +26,7 @@ const loadHome = () => {
 	to [redacted].</p>`);
 
 	// Makes Menu Text and Menu Image
-	makeDiv("#homeContainer", "menuImageDiv", '<img id="menuImage" src="images/lightCream.jpg" alt="Image of Tasty Ice Cream">');
+	makeDiv("#homeContainer", "menuImageDiv", '<img id="menuImage" src="./images/lightCream.jpg" alt="Image of Tasty Ice Cream">');
 	makeDiv("#homeContainer", "menuText", `<p>See what foods we offer to you. This is the offer. We're offering food to you.</p><button id="menuButton">See Our "Menu"</button>`);
 
 	// Makes Location Text and Location Image
