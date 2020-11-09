@@ -34,7 +34,7 @@ const loadHome = () => {
 	makeDiv("#homeContainer", "locationImageDiv", '<img id="locationImage" src="images/locationImage.jpg" alt="Image of Cafe Location">');
 
 	// Makes About us image and text
-	makeDiv("#homeContainer", "aboutImageDiv", '<img id="aboutImage" src="images/orange.jpg" alt="Image of Us">');
+	makeDiv("#homeContainer", "aboutImageDiv", '<img id="aboutImage" src="./images/orange.jpg" alt="Image of Us">');
 	makeDiv("#homeContainer", "aboutText", `<p>With a combined [redacted] years of culinary experience, we can.</p><ul><li> - Trustworthy</li><li> - The Lesser Evil</li><li> - Won't Betray You Again</li><li> - We DO NOT alter our clients memories.</li></ul><button></button>`);
 
 	// Makes Contact Us text and image
