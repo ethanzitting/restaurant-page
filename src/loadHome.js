@@ -18,7 +18,7 @@ const loadHome = () => {
 	makeDiv("#content", "homeContainer");
 
 	// Makes Logo
-	makeDiv("#homeContainer", "logo", "<img id='logoImage' src='https://github.com/ethanzitting/restaurant-page/blob/main/dist/images/logo.svg' alt='Cafe Logo Image'>");
+	makeDiv("#homeContainer", "logo", "<img id='logoImage' src='./images/logo.svg' alt='Cafe Logo Image'>");
 
 	// Makes BrandName and description
 	makeDiv("#homeContainer", "brandName", `<h1>ACME Cafe</h1><p id="descriptionText">We are an owned and operated cafe 
@@ -39,7 +39,7 @@ const loadHome = () => {
 
 	// Makes Contact Us text and image
 	makeDiv("#homeContainer", "contactText", `<p>Get in touch with us! You can link with our mind by thinking any thought, or you can just whisper. We can hear you just fine. We're right behind you.</p><button id="contactButton">Contact Us</button>`);
-	makeDiv("#homeContainer", "contactImageDiv", `<img id="contactImage" src="images/telepathy.png" alt="Image of You Contacting Us">`);
+	makeDiv("#homeContainer", "contactImageDiv", `<img id="contactImage" src="./images/telepathy.png" alt="Image of You Contacting Us">`);
 
 	// Highlights Home Tab
 	activateTab("#home");
